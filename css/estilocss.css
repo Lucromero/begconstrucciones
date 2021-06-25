@@ -588,12 +588,12 @@
   .grid-container {
     display: grid;
     margin: 0;
-    grid-template-columns: repeat(3, 33%);
-    grid-template-rows: repeat(3, 33%);
+    grid-template-columns: repeat(3, 30%);
+    grid-template-rows: repeat(3, 30%);
     grid-row-gap: 5px;
     text-align: left;
     justify-content: stretch;
-    grid-template-areas: "cUno cDos cTres" "cCuatro cDos cTres" "cCinco cCinco cSeis"; }
+    grid-template-areas: "cUno cUno cTres" "cCuatro cCuatro cTres" "cCinco cCinco cSeis"; }
   .cUno {
     grid-area: cUno; }
   .cTres {
@@ -619,9 +619,11 @@
   .imUno {
     width: 150px;
     height: 100px; }
-  .imDos, .imTres {
-    width: 100px;
+  .imTres {
+    width: 125px;
     height: 200px; }
+  .imDos {
+    display: none; }
   .imCinco {
     width: 200px;
     height: 100px; } }
