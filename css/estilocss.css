@@ -267,11 +267,13 @@
     text-align: center;
     justify-content: stretch;
     grid-template-areas: "icono4 icono5"; }
+  .mainBlog {
+    height: 1250px !important; }
   .gridBlog {
     display: grid;
     margin: 25px;
     padding: 50px;
-    grid-template-columns: repeat(2, 50%);
+    grid-template-columns: repeat(2, 45%);
     grid-template-rows: repeat(2, 50%);
     grid-column-gap: 25px;
     text-align: center;
@@ -380,7 +382,7 @@
   .tipoH3 {
     color: black;
     font-weight: bold;
-    font-size: 15px;
+    font-size: 10px !important;
     text-align: center;
     margin: 3px; }
   .tipoServicios {
@@ -461,11 +463,12 @@
     display: grid;
     text-align: left;
     justify-items: center;
-    margin: 25px;
+    margin: 5px;
     padding: 0px;
     grid-template-columns: repeat(2, 50%);
     grid-template-rows: auto;
-    font-size: 7px; }
+    font-size: 7px;
+    align-items: center !important; }
   .cta {
     /*call to action de seccion contacto*/
     color: black;
@@ -847,7 +850,8 @@
     padding: 0px;
     grid-template-columns: repeat(2, 50%);
     grid-template-rows: auto;
-    font-size: 10px; }
+    font-size: 10px;
+    align-items: center !important; }
   .cta {
     /*call to action de seccion contacto*/
     color: black;
