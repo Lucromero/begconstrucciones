@@ -45,6 +45,15 @@ nav ul{
 .verMas{
         color:black;
 }
+.mayus{
+        text-transform: uppercase;
+
+}
+
+h2{
+        color:#F5AC81;
+        font-weight: bold;
+}
 
 /* Desktop Styles */
 @media only screen and (min-width: 961px) {
@@ -161,10 +170,6 @@ nav ul{
 
         }
 
-        h2{
-                color:#F5AC81;
-                font-weight: bold;
-        }
         .nuestrosServicios{     
                 color:#3a0d0d;
                 font-weight: bold;
@@ -375,10 +380,7 @@ nav ul{
                 padding:10px;
         }
 
-        .mayus{
-                text-transform: uppercase;
 
-        }
  /*Grilla */
 
         .grid-container {
@@ -535,11 +537,6 @@ nav ul{
         p{
                 font-style: italic;
                 font-size: 10px;
-        }
-
-        h2{
-                color:#F5AC81;
-                font-weight: bold;
         }
 
         header{
@@ -866,12 +863,6 @@ nav ul{
                 font-style: italic;
                 font-size: 15px;
         }
-
-        h2{
-                color:#F5AC81;
-                font-weight: bold;
-        }
-
 
         header{
                 width: 100%;
