@@ -3,50 +3,87 @@
         margin: 0 !important; /*margen para todas las secciones*/
         padding: 0 !important; /*relleno para todas las secciones*/
 }
+@mixin fuente {
+        font-family: 'Montserrat', sans-serif;
+}
+@mixin colorblanco {
+        color:white;        
+}
+a{
+        @include colorblanco ;
+}
+.logo{
+        display: flex;  
+        flex-direction: row; 
+        justify-content: center;
+        padding:0;
+}
+body{                
+        background-color: #e8e2c8;
+        padding:0;
+        margin:0;
+}
+tr th{
+        font-weight: bold;
+        color:#3D372B;
+}
 
+tr td{
+        font-style: italic;
+        color:#BAA882;
+}
+main{
+        background-color: #e8e2c8;
+}
+
+nav ul{
+        list-style: none !important;
+        display:flex !important;
+        background-color: #3D372B;           
+}
+
+.verMas{
+        color:black;
+}
 
 /* Desktop Styles */
 @media only screen and (min-width: 961px) {
+
         footer{
                 padding:0;
                 margin:0;
         }       
-            .subFooter{
-            font-size:15px;
-            margin:10px;
-            font-weight: bold;
-        
+        .subFooter{
+                font-size:15px;
+                margin:10px;
+                font-weight: bold;
+                
         }
         
         .linkFooter{
-            font-size:15px;
-            color:white;
-            margin:10px;
+                font-size:15px;
+                @include colorblanco ;
+                margin:10px;
         }
         
         .tituloFooter{
-            font-size:20px;
-            font-weight: bold;
-            margin:15px;
-            font-weight: bold;
-        
+                font-size:20px;
+                font-weight: bold;
+                margin:15px;
+                font-weight: bold;
+                
         }
         .caja{ /*se corresponde a las cajas del footer*/
-            background-color:#BAA882 !important;/*es el fondo del footer*/
-            font-family: 'Montserrat', sans-serif;
-            height: 150px;
-            display: flex;
-            flex-direction: row; 
-            justify-content: space-between;
-            line-height: 2;
-            align-items: center !important;
-        }
-        .logo{
-                display: flex;  
+                background-color:#BAA882 !important;/*es el fondo del footer*/
+                @include fuente;            ;
+                height: 150px;
+                display: flex;
                 flex-direction: row; 
-                justify-content: center;
-                padding:0;
+                justify-content: space-between;
+                line-height: 2;
+                align-items: center !important;
         }
+
 
         .imagenLogo{
                 width:250px;
@@ -124,17 +161,6 @@
 
         }
 
-        body{                
-                background-color: #e8e2c8;
-                padding:0;
-                margin:0;
-        }
-       
-        a{
-                color:white
-        }
-
-        
         h2{
                 color:#F5AC81;
                 font-weight: bold;
@@ -178,36 +204,26 @@
                 text-align: left;
                 margin: 3px;
         }
-        tr th{
-                font-weight: bold;
-                color:#3D372B;
-        }
-
-        tr td{
-                font-style: italic;
-                color:#BAA882;
-        }
 
         header{
                 width: 100%;
                 height: 100%;
                 background-color: #8d8979;
                 opacity: 0.9;
-                padding:0;/*Tengo problemas aca para borrar el espacio en blanco de mi web*/
+                padding:0;
                 margin:0;
         }
-        head{/*Tengo problemas aca para borrar el espacio en blanco de mi web*/
+        head{
                 padding:0;
                 margin:0;
         }
         main{
-                background-color: #e8e2c8;
-                padding:0; /*Tengo problemas aca para borrar el espacio en blanco de mi web*/
+                padding:0; 
                 margin:0;
         }
 
         ul{
-               color:white;
+                @include colorblanco ;
                background-color: #3D372B ;
         }
 
@@ -233,14 +249,8 @@
                 line-height: 2; 
         }
 
-        nav ul{
-                list-style: none;
-                display:flex !important;
-                background-color: #3D372B;           
-        }
 
         .verMas{
-                color:black;
                 margin: 0;
                 padding: 0;  
         }
@@ -274,7 +284,7 @@
         ul ul { /*submenú*/
                 position: absolute;
                 display: none;
-                z-index: 1;                 /*Tengo problemas aca para aplicar el z-index*/
+                z-index: 1;               
         }
         .indexNeg{
                 position: absolute;
@@ -316,7 +326,7 @@
                 display: grid;
                 margin: 15px;
                 padding: 50px;
-                grid-template-columns: repeat(3,33%);
+                grid-template-columns: repeat(3,30%);
                 grid-template-rows: repeat(1,100%);
                 grid-column-gap: 25px;
                 text-align: center;
@@ -329,7 +339,7 @@
                 display: grid;
                 margin: 15px;
                 padding: 50px;
-                grid-template-columns: repeat(5,50%);
+                grid-template-columns: repeat(5,45%);
                 grid-template-rows: repeat(1,100%);
                 grid-column-gap: 25px;
                 text-align: center;
@@ -423,51 +433,45 @@
 /*Mobile styles*/
 @media only screen and (max-width: 550px) {
         *{
-        font-family: 'Montserrat', sans-serif;
+        @include fuente;  
         margin: 0; /*margen para todas las secciones*/
         padding: 0; /*relleno para todas las secciones*/
 
         } 
         
-footer{
-        padding:0;
-        margin:0;
-}
-.subFooter{
-
-    margin:10px;
-    font-weight: bold;
-
-}
-
-.linkFooter{
-
-    color:white;
-    margin:10px;
-}
-
-.tituloFooter{
-
-    font-weight: bold;
-    margin:15px;
-    font-weight: bold;
-
-}
-.caja{ /*se corresponde a las cajas del footer*/
-    background-color:#BAA882 !important;/*es el fondo del footer*/
-    font-family: 'Montserrat', sans-serif;
-    height: 150px;
-    display: flex;
-    flex-direction: row; 
-    justify-content: space-between;
-    line-height: 2;
-    align-items: center !important;
-}
-        .logo{
-                display: flex;  
-                flex-direction: row; 
-                justify-content: center;
+        footer{
                 padding:0;
+                margin:0;
+        }
+        .subFooter{
+
+        margin:10px;
+        font-weight: bold;
+
+        }
+
+        .linkFooter{
+
+                @include colorblanco ;
+                margin:10px;
+        }
+
+        .tituloFooter{
+
+        font-weight: bold;
+        margin:15px;
+        font-weight: bold;
+
+        }
+        .caja{ /*se corresponde a las cajas del footer*/
+        background-color:#BAA882 !important;/*es el fondo del footer*/
+        @include fuente;  
+        height: 150px;
+        display: flex;
+        flex-direction: row; 
+        justify-content: space-between;
+        line-height: 2;
+        align-items: center !important;
         }
 
         .imagenLogo{
@@ -527,16 +531,7 @@ footer{
 
 
         }
-        body{                
-                background-color: #e8e2c8;
-                padding:0;
-                margin:0;
-        }
-
-        a{
-                color:white
-        }
-
+ 
         p{
                 font-style: italic;
                 font-size: 10px;
@@ -547,16 +542,6 @@ footer{
                 font-weight: bold;
         }
 
-        tr th{
-                font-weight: bold;
-                color:#3D372B;
-        }
-
-        tr td{
-                font-style: italic;
-                color:#BAA882;
-        }
-
         header{
                 width: 100%;
                 height: 100%;
@@ -564,7 +549,6 @@ footer{
                 opacity: 0.9;
         }
         main{
-                background-color: #e8e2c8;
                 height: 100%;
                 width: 100%;
                 padding:0px;
@@ -629,15 +613,6 @@ footer{
                 padding: 20px
         }
 
-        nav ul{
-                list-style: none !important;
-                display:flex !important;
-                background-color: #3D372B;           
-        }
-
-        .verMas{
-                color:black;
-        }
 
         .menu li>a{ /*menú*/
                 background-color: #3D372B;
@@ -677,13 +652,6 @@ footer{
         ul li:hover ul {
                 display:block !important;
         }
-
- 
-        a{
-                color:white
-        }
-
- 
         .servicios{
                 display: grid;
                 text-align: center;
@@ -829,7 +797,7 @@ footer{
 /* Tablet Styles */
 @media only screen and (min-width: 550px) and (max-width: 960px) {
  *{
-        font-family: 'Montserrat', sans-serif;
+        @include fuente;  
         margin: 0; /*margen para todas las secciones*/
         padding: 0; /*relleno para todas las secciones*/
         font-size:15px;
@@ -837,7 +805,7 @@ footer{
 
         .caja{ /*se corresponde a las cajas del footer*/
                 background-color:#BAA882 !important;/*es el fondo del footer*/
-                font-family: 'Montserrat', sans-serif;
+                @include fuente;  
                 height: 150px;
                 display: flex;  
                 flex-direction: row; 
@@ -869,12 +837,6 @@ footer{
         
         }
 
-        .logo{
-                display: flex;  
-                flex-direction: row; 
-                justify-content: center;
-                      
-        }
         .imagenLogo{
                 width:200px;
                 height:200px;
@@ -899,15 +861,6 @@ footer{
                 text-align: center;
 
         }
-        body{                
-                background-color: #e8e2c8;
-                padding:0;
-                margin:0;
-        }
-
-        a{
-                color:white
-        }
 
         p{
                 font-style: italic;
@@ -919,35 +872,12 @@ footer{
                 font-weight: bold;
         }
 
-        tr th{
-                font-weight: bold;
-                color:#3D372B;
-        }
-
-        tr td{
-                font-style: italic;
-                color:#BAA882;
-        }
-
 
         header{
                 width: 100%;
                 height: 100%;
                 background-color: #8d8979;
                 opacity: 0.9;
-        }
-        main{
-                background-color: #e8e2c8;
-        }
-
-        nav ul{
-                list-style: none;
-                display:flex !important;
-                background-color: #3D372B;           
-        }
-
-        .verMas{
-                color:black;
         }
 
         .menu li>a{ /*menú*/
@@ -1210,9 +1140,4 @@ footer{
                 width:400px;
                 height:150px;
         }
- 
-        a{
-                color:white
-        }
-
 }

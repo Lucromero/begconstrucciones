@@ -7,6 +7,39 @@
   padding: 0 !important;
   /*relleno para todas las secciones*/ }
 
+a {
+  color: white; }
+
+.logo {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 0; }
+
+body {
+  background-color: #e8e2c8;
+  padding: 0;
+  margin: 0; }
+
+tr th {
+  font-weight: bold;
+  color: #3D372B; }
+
+tr td {
+  font-style: italic;
+  color: #BAA882; }
+
+main {
+  background-color: #e8e2c8; }
+
+nav ul {
+  list-style: none !important;
+  display: flex !important;
+  background-color: #3D372B; }
+
+.verMas {
+  color: black; }
+
 /* Desktop Styles */
 @media only screen and (min-width: 961px) {
   footer {
@@ -36,11 +69,6 @@
     justify-content: space-between;
     line-height: 2;
     align-items: center !important; }
-  .logo {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    padding: 0; }
   .imagenLogo {
     width: 250px;
     height: 250px;
@@ -95,12 +123,6 @@
     height: 250px; }
   .blogIndex {
     text-align: center; }
-  body {
-    background-color: #e8e2c8;
-    padding: 0;
-    margin: 0; }
-  a {
-    color: white; }
   h2 {
     color: #F5AC81;
     font-weight: bold; }
@@ -137,28 +159,18 @@
     font-size: 30px;
     text-align: left;
     margin: 3px; }
-  tr th {
-    font-weight: bold;
-    color: #3D372B; }
-  tr td {
-    font-style: italic;
-    color: #BAA882; }
   header {
     width: 100%;
     height: 100%;
     background-color: #8d8979;
     opacity: 0.9;
     padding: 0;
-    /*Tengo problemas aca para borrar el espacio en blanco de mi web*/
     margin: 0; }
   head {
-    /*Tengo problemas aca para borrar el espacio en blanco de mi web*/
     padding: 0;
     margin: 0; }
   main {
-    background-color: #e8e2c8;
     padding: 0;
-    /*Tengo problemas aca para borrar el espacio en blanco de mi web*/
     margin: 0; }
   ul {
     color: white;
@@ -183,12 +195,7 @@
     border-radius: 20px;
     border: #fff3db;
     line-height: 2; }
-  nav ul {
-    list-style: none;
-    display: flex !important;
-    background-color: #3D372B; }
   .verMas {
-    color: black;
     margin: 0;
     padding: 0; }
   .menu li > a {
@@ -220,8 +227,7 @@
     /*submenú*/
     position: absolute;
     display: none;
-    z-index: 1;
-    /*Tengo problemas aca para aplicar el z-index*/ }
+    z-index: 1; }
   .indexNeg {
     position: absolute;
     display: none;
@@ -251,7 +257,7 @@
     display: grid;
     margin: 15px;
     padding: 50px;
-    grid-template-columns: repeat(3, 33%);
+    grid-template-columns: repeat(3, 30%);
     grid-template-rows: repeat(1, 100%);
     grid-column-gap: 25px;
     text-align: center;
@@ -261,7 +267,7 @@
     display: grid;
     margin: 15px;
     padding: 50px;
-    grid-template-columns: repeat(5, 50%);
+    grid-template-columns: repeat(5, 45%);
     grid-template-rows: repeat(1, 100%);
     grid-column-gap: 25px;
     text-align: center;
@@ -358,11 +364,6 @@
     justify-content: space-between;
     line-height: 2;
     align-items: center !important; }
-  .logo {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    padding: 0; }
   .imagenLogo {
     width: 100px;
     height: 100px;
@@ -403,31 +404,18 @@
     line-height: 1.5;
     margin: 5px;
     padding: 5px; }
-  body {
-    background-color: #e8e2c8;
-    padding: 0;
-    margin: 0; }
-  a {
-    color: white; }
   p {
     font-style: italic;
     font-size: 10px; }
   h2 {
     color: #F5AC81;
     font-weight: bold; }
-  tr th {
-    font-weight: bold;
-    color: #3D372B; }
-  tr td {
-    font-style: italic;
-    color: #BAA882; }
   header {
     width: 100%;
     height: 100%;
     background-color: #8d8979;
     opacity: 0.9; }
   main {
-    background-color: #e8e2c8;
     height: 100%;
     width: 100%;
     padding: 0px;
@@ -485,12 +473,6 @@
     /*Transicion 2*/
     transform: scale(1.3);
     padding: 20px; }
-  nav ul {
-    list-style: none !important;
-    display: flex !important;
-    background-color: #3D372B; }
-  .verMas {
-    color: black; }
   .menu li > a {
     /*menú*/
     background-color: #3D372B;
@@ -523,8 +505,6 @@
     display: block !important; }
   ul li:hover ul {
     display: block !important; }
-  a {
-    color: white; }
   .servicios {
     display: grid;
     text-align: center;
@@ -664,10 +644,6 @@
     font-weight: bold;
     margin: 15px;
     font-weight: bold; }
-  .logo {
-    display: flex;
-    flex-direction: row;
-    justify-content: center; }
   .imagenLogo {
     width: 200px;
     height: 200px; }
@@ -682,37 +658,17 @@
     height: 150px; }
   #blog {
     text-align: center; }
-  body {
-    background-color: #e8e2c8;
-    padding: 0;
-    margin: 0; }
-  a {
-    color: white; }
   p {
     font-style: italic;
     font-size: 15px; }
   h2 {
     color: #F5AC81;
     font-weight: bold; }
-  tr th {
-    font-weight: bold;
-    color: #3D372B; }
-  tr td {
-    font-style: italic;
-    color: #BAA882; }
   header {
     width: 100%;
     height: 100%;
     background-color: #8d8979;
     opacity: 0.9; }
-  main {
-    background-color: #e8e2c8; }
-  nav ul {
-    list-style: none;
-    display: flex !important;
-    background-color: #3D372B; }
-  .verMas {
-    color: black; }
   .menu li > a {
     /*menú*/
     background-color: #3D372B;
@@ -919,6 +875,4 @@
     height: 300px; }
   .imCinco {
     width: 400px;
-    height: 150px; }
-  a {
-    color: white; } }
+    height: 150px; } }
