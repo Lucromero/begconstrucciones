@@ -4,7 +4,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build-css": "node-sass --include-path scss scss/prueba.scss css/pruebacss.css",
+    "build-css": "node-sass --include-path scss scss/estilo.scss css/estilocss.css",
     "watch-css": "nodemon -e scss -x \"npm run build-css\""
   },
   "author": "Lucia Romero",
@@ -14,5 +14,13 @@
     "nodemon": "^2.0.7"
   },
   "description": "Proyecto Desarrollo Web",
-  "dependencies": {}
+  "dependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Lucromero/begconstrucciones.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Lucromero/begconstrucciones/issues"
+  },
+  "homepage": "https://github.com/Lucromero/begconstrucciones#readme"
 }
