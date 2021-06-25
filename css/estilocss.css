@@ -438,32 +438,33 @@
     background-color: #fff3db;
     margin: 5px;
     padding: 5px;
-    width: 200px;
+    width: 150px;
     height: 250px;
-    overflow: hidden;
+    overflow: scroll;
     display: inline-block;
     text-align: center;
     border-radius: 15px;
     border: #fff3db;
     line-height: 3;
-    align-items: center;
+    align-items: center !important;
     font-size: 5px; }
   .formulario {
     background-color: #fff3db;
     margin: 0px;
     padding: 0px;
-    width: 0px;
+    width: 150px;
     text-align: center;
     border-radius: 15px;
     border: #fff3db;
     line-height: 2;
-    font-size: 5px; }
+    font-size: 5px;
+    align-items: center !important; }
   .seccionContacto {
     text-transform: uppercase;
     display: grid;
     text-align: left;
     justify-items: center;
-    margin: 5px;
+    margin: 0px;
     padding: 0px;
     grid-template-columns: repeat(2, 45%);
     grid-template-rows: auto;
